@@ -8,38 +8,7 @@ import Headings from "../components/Heading";
 import Sliders from "../components/Slider";
 import Subbody from "../Subbody";
 import Model from "../components/Model";
-import {
-	Box,
-	Flex,
-	Avatar,
-	HStack,
-	Link,
-	VStack,
-	IconButton,
-	Button,
-	Menu,
-	MenuButton,
-	MenuList,
-	MenuItem,
-	MenuDivider,
-	useDisclosure,
-	useColorModeValue,
-	Image,
-	Stack,
-	StackDivider,
-	Grid,
-	Tabs,
-	TabList,
-	OrderedList,
-	ListItem,
-	List,
-	Tab,
-	Input,
-	Badge,
-	Text,
-	Divider,
-	SearchIcon,
-} from "@chakra-ui/react";
+import { Box, VStack, StackDivider, Text } from "@chakra-ui/react";
 import SecondNavbar from "../components/SecondNavbar";
 const settings = {
 	dots: false,
@@ -52,11 +21,11 @@ const settings = {
 function Main() {
 	return (
 		<>
-			<Navbar></Navbar>
-			<Headings></Headings>
-			<SecondNavbar></SecondNavbar>
-			<Sliders></Sliders>
-			<Subbody></Subbody>
+			<Navbar />
+			<Headings />
+			<SecondNavbar />
+			<Sliders />
+			<Subbody />
 			<Box height="500px" bg="gray">
 				<Box mx="auto" bg="red" height="560px" w="50%">
 					<Box display="flex" pt="50px">
