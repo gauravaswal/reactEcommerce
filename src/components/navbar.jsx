@@ -8,7 +8,7 @@ function Navbar() {
 			<Flex
 				justifyContent="space-between"
 				alignItems="center"
-				px="10em"
+				px="8em"
 				py="0.5em"
 				borderBottom="1px solid"
 				borderColor="gray.100"
