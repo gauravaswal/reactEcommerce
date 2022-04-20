@@ -10,7 +10,11 @@ import {
     ModalCloseButton,
     Button,
     Box,
-    Text
+    Text,
+    Heading,
+    Image,
+    StackDivider,
+    VStack
 
 } from '@chakra-ui/react'
 
@@ -20,18 +24,52 @@ export default function ReturnFocus(props) {
 
     return (
         <>
-            <Button onClick={onOpen}>Open Modal</Button>
-
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Button onClick={onOpen}>ADD TO CART</Button>
+            <Modal isOpen={isOpen} onClose={onClose} >
                 <ModalOverlay />
-                <ModalContent>
-                    <ModalHeader>Modal Title</ModalHeader>
+                <ModalContent maxW={"1030px"}>
                     <ModalCloseButton />
                     <ModalBody>
-                        <Text>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia omnis ipsa quod veritatis iusto hic corporis dolor unde voluptatum deserunt vero cumque quidem aut, doloremque, inventore quo veniam blanditiis non.
-                        </Text>
-                        {/* <Lorem count={2} /> */}
+                        {/* <Box height="500px" bg="gray"> */}
+                        <Box mx="auto" height="560px" >
+                            <Box display="flex" pt="50px" gap={"31px"}>
+                                <Box w="40%" bg="blue" h="450px">
+                                <Image src="/donwload1.jpeg"  w="100%" h="480px"alt="test" />
+
+                                </Box>
+                                <Box w="70%" h="350px">
+                                    <Text fontSize={"30px"} fontWeight={"15px!important"} color={"#222"}>SPICY JALAPE IRURE</Text>
+                                    <VStack
+                                        divider={<StackDivider borderColor="gray.200" />}
+                                        spacing={4}
+                                        align="stretch"
+                                    >
+                                        <Box h="40px">
+                                            <Text color={"#222"}>AVAILABILITY: In stock</Text>
+                                        </Box>
+                                        <Box h="40px">
+                                            <Text color={"#222"}>PRODUCT TYPE: Amazon</Text>
+                                        </Box>
+                                        <Box h="40px">
+                                            <Text color={"#222"}>VENDOR: Furnicom</Text>
+                                        </Box>
+                                        <Box h="40px" >
+                                            <Text color={"#222"}>$245.00</Text>
+                                        </Box>
+                                        <Box h="80px" >
+                                            <Text color={"#222"}>
+                                                Curabitur egestas malesuada volutpat. Nunc vel vestibulum
+                                                odio, ac pellentesque lacus. Pellentesque dapibus nunc nec
+                                                est imperdiet, a malesuada sem rutrum. Sed..
+                                            </Text>
+                                        </Box>
+                                        <Button>
+                                            ADD TO CART
+                                        </Button>
+                                    </VStack>
+                                </Box>
+                            </Box>
+                        </Box>
                     </ModalBody>
 
                     <ModalFooter>
