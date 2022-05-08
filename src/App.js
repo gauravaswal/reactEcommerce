@@ -7,6 +7,8 @@ import Navbar from "./components/navbar";
 import Heading from "./components/Heading";
 import Sliders from "./components/Slider";
 import Main from "./pages/Main";
+import Login from "./pages/login";
+
 
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SecondNavbar from "./components/SecondNavbar";
@@ -14,6 +16,8 @@ function App() {
 	return (
 		<Routes>
 			<Route path="/" element={<Main />}></Route>
+			<Route path="/login" element={<Login />}></Route>
+
 		</Routes>
 	);
 }

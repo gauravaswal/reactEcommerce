@@ -36,17 +36,6 @@ import {
     SearchIcon,
 } from '@chakra-ui/react';
 function Sliders() {
-    // var settings = {
-    //     dots: false,
-    //     infinite: true,
-    //     autoplay: true,
-    //     speed: 2000,
-    //     autoplaySpeed: 2000,
-    //     slidesToShow: 1,
-    //     cssEase: 'linear',
-    //     slidesToScroll: 1,
-    //     rtl:false
-    // };
     const settings = {
         dots: true,
         infinite: true,
